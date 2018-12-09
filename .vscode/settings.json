@@ -1,0 +1,16 @@
+{
+    "git.ignoreLimitWarning": true,
+    "liveServer.settings.https": {
+      "enable": false,
+      "cert": "",
+      "key": "",
+      "passphrase": ""
+    },
+    "liveServer.settings.port": 0,
+    "liveServer.settings.wait": 300,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 22,
+    "editor.tabSize": 2,
+    "editor.fontFamily": " 'Fira Code' ",
+    "editor.wordWrap": "on",
+  }

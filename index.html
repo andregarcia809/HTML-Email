@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Html Email Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+  <style>
+    /* Desktop */
+    @media only screen and (min-width: 960px) {
+      .container {
+        width: 960px;
+      }
+
+      .hero-wrap {
+        padding: 33px !important;
+      }
+    }
+
+    .one-solution {
+      width: 100%;
+      text-align: center;
+    }
+
+    .interested-wrap p {
+      width: 50%;
+    }
+
+    .container.app-store.play-store img {
+      /*needs work */
+      text-align: right !important;
+    }
+
+    /* Ipad */
+    @media only screen and (max-width: 959px) {
+      .container {
+        width: 600px;
+      }
+    }
+
+    .interested-wrap p {
+      width: 100%;
+    }
+
+    /*Advance App-Details */
+    .app-store p {
+      text-align: left;
+    }
+
+    .play-store td {
+      text-align: left !important;
+    }
+
+    .app-store td {
+      text-align: right !important;
+    }
+
+    /* mobile */
+    @media only screen and (max-width: 767px) {
+      .container {
+        width: 100%;
+        text-align: center !important;
+      }
+
+      /* Hero-Wrap*/
+      .hero-wrap {
+        width: 100%;
+        text-align: center !important;
+      }
+
+      .hero-wrap h2 {
+        font-size: 40px !important;
+      }
+
+      .hero-wrap h1 {
+        font-size: 90px !important;
+      }
+
+      .hero-wrap p {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+      }
+
+      .hero-wrap a {
+        font-size: 25px !important;
+      }
+
+      .hero-wrap img {
+        position: relative;
+        left: -42%;
+        zoom: 1.5;
+      }
+
+      /* Nav-Wrap*/
+      .nav-wrap {
+        width: 100%;
+        text-align: center !important;
+      }
+
+      .nav-wrap a {
+        font-size: 30px !important;
+      }
+
+      .nav-wrap img {
+        zoom: 1.3;
+      }
+
+      /* Hero Info*/
+      .hero-info h4 {
+        font-size: 35px !important;
+        margin-right: 100px !important;
+      }
+
+      .hero-info h3 {
+        font-size: 40px !important;
+      }
+
+      .hero-info p,
+      a {
+        font-size: 30px !important;
+      }
+
+      .hero-info img {
+        margin-left: 30px !important;
+        zoom: 3;
+      }
+
+      .notify,
+      .share,
+      .connect {
+        width: 100%;
+      }
+
+      .hero-info .title-icon {
+        width: 100%;
+      }
+
+      /* App Section */
+      .app h3 {
+        font-size: 40px !important;
+      }
+
+      .app p {
+        font-size: 30px !important;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .app td {
+        text-align: center !important;
+      }
+
+      .app-store,
+      .play-store {
+        width: 100%;
+        text-align: center !important;
+      }
+
+      .app-store img {
+        zoom: 1.5;
+      }
+
+      .play-store img {
+        zoom: 1.5;
+        margin-bottom: 40px;
+      }
+
+      /* Features Section */
+      .sync img {
+        zoom: 1.5;
+      }
+
+      .share img {
+        zoom: 1.5;
+      }
+
+      .connect img {
+        zoom: 1.5;
+      }
+
+      .stats img {
+        zoom: 1.5;
+      }
+
+      .features h3 {
+        font-size: 80px !important;
+      }
+
+      .features h5,
+      h5 {
+        font-size: 40px !important;
+      }
+
+      .sync,
+      .share,
+      .stats {
+        width: 100%;
+        text-align: center !important;
+      }
+
+      .sync p {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0;
+      }
+
+      .share p {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0;
+      }
+
+      .connect p {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0;
+      }
+
+      .connect p {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0;
+      }
+
+      .stats p {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0;
+      }
+
+      /*Details Section*/
+      .table {
+        width: 100%;
+      }
+
+      .table img {
+        margin-left: 30px !important;
+        zoom: 3;
+      }
+
+      .table h3 {
+        font-size: 35px !important;
+        margin-right: 100px !important;
+      }
+
+      .table p {
+        font-size: 30px !important;
+        margin-bottom: 16px !important;
+      }
+
+      /*Interested Wrap*/
+      .interested-wrap h1 {
+        font-size: 40px !important;
+      }
+
+      .interested-wrap p {
+        font-size: 32px !important;
+      }
+
+      .interested-wrap a {
+        padding: 20px !important;
+      }
+
+      .interested-wrap td {
+        padding: 50px !important;
+        line-height: 1.2 !important;
+      }
+
+      /*Social Media Section*/
+      .social-media-wrap h1 {
+        font-size: 80px !important;
+      }
+
+      .social-media-wrap img {
+        zoom: 1.8;
+      }
+
+      .social-media-wrap p {
+        font-size: 16px !important;
+      }
+
+      .social-media-wrap a {
+        font-size: 16px !important;
+      }
+    }
+  </style>
+</head>
+
+<body style=" background: black;">
+  <!--Start of Email-->
+  <table width="100%" border="0" cellpading="0" cellspacing="0">
+    <tr>
+      <td>
+        <!--Start of container-->
+        <table class="container" width="600px" align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <!--Start of Hero Colunm-->
+              <table class="hero-wrap" width="50%" align="left" border="0" cellpadding="0" cellspacing="0" style="background: #00f9f5; background: -moz-linear-gradient(left, #00f9f5 15%, #208fe5 100%, #208fe5 100%, #2989d8 100%, #208fe5 101%, #208fe5 103%); background: -webkit-linear-gradient(left, #00f9f5 15%,#208fe5 100%,#208fe5 100%,#2989d8 100%,#208fe5 101%,#208fe5 103%); background: linear-gradient(to right, #00f9f5 15%,#208fe5 100%,#208fe5 100%,#2989d8 100%,#208fe5 101%,#208fe5 103%); padding:  17px">
+                <tr>
+                  <td style="font-family: 'Open Sans', 'Helvetica Neue',       'Helvetica', 'Arial',    'Lucida Grande', 'sans-serif'; color: white; padding: 15px 15px 70px 15px">
+                    <img src="http://andresgarcia809.com/html-email/img/logo.png" alt="logo of the letter H inside a white square">
+                    <h2 style="font-size: 30px; padding: 25px 0 10px; margin: 0;font-weight: 300; line-height: 1;">Get
+                      ready for</h2>
+                    <h1 style="font-size: 80px; line-height: 1;padding: 0 0 10px; margin: 0;">Hero</h1>
+                    <p style=" font-size: 16px; line-height: 1; font-style: italic; padding: 20px 0 50px; margin: 0;">It
+                      seems like hundreds of new iWatch apps pop up every week, but which ones should you bother trying</p>
+                    <a href="#" class="ghost-btn" style="font-size: 12px; border: 1px solid white; border-radius: 3px; padding: 6px 10px; margin: 1rem auto; text-decoration: none; color: white; text-transform: uppercase;">Learn
+                      More</a>
+                  </td>
+                </tr>
+              </table>
+              <!--End of Hero Colunm-->
+              <!--Start of nav-menu smartWatch Colunm-->
+              <table class="nav-wrap" width="50%" align="center" border="0" cellpadding="0" cellspacing="0" style=" background: white;  padding: 15px 15px 0px 15px"
+                ;>
+                <tr>
+                  <td>
+                    <!-- Nav Start-->
+                    <table class="nav-menu" width="100%" align="right" border="0" cellpadding="0" cellspacing="0" style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande','sans-serif'; color: #7d7d7d;  padding: 15px;"
+                      align="center;">
+                      <tr>
+                        <td align="center">
+                          <a style=" font-size: 14px; font-weight: 600; text-decoration: none; color: #7d7d7d" href="#">About</a>
+                        </td>
+                        <td align="center">
+                          <a style=" font-size: 14px; font-weight: 600; text-decoration: none; color: #7d7d7d" href="#">Careers</a>
+                        </td>
+                        <td align="center">
+                          <a style=" font-size: 14px; font-weight: 600; text-decoration: none; color: #7d7d7d" href="#">Contact</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- Nav End-->
+                  </td>
+                </tr>
+                <!-- smartWatch Start-->
+                <tr>
+                  <td align=" center" valign="bottom" style=" padding-top: 49px;">
+                    <img src="http://andresgarcia809.com/html-email/img/smartwatch.png" alt="pink watch icon" valign="bottom">
+                  </td>
+                </tr>
+                <!-- smartWatch Start-->
+              </table>
+              <!--End of nav-menu smartWatch Colunm-->
+              <!-- Hero-info Start-->
+          <tr class="hero-info" style="background: #fafafa;">
+            <td style="text-align: center;">
+              <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; text-transform: uppercase; color: #333333; padding: 36px 0 24px 0; font-size: 24px; font-weight: 300;"
+                align="center">Hero let's you</h3>
+              <!-- Start of Notify colunm -->
+              <table class="notify" width="33.33%" align="left" border="0" cellpadding="0" cellspacing="0" style=" padding: 15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="title-icon" width="33.33%" align="left" border="0" cellpadding="0" cellspacing="0"
+                      style=" padding: 0;">
+                      <tr>
+                        <td>
+                          <img src="http://andresgarcia809.com/html-email/img/bell_icon.png" alt="bell icon">
+                        </td>
+                        <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding: 0 0 0 15px; font-weight: 600;text-transform: uppercase; font-size: 14px;">
+                          <h4>Notify</h4>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300; line-height: 1.8; font-size: 14px;">Lorem
+                      ipsum dolor sit amet consectetur.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: lightblue; font-weight: 600; font-size: 14px; text-decoration: none;"
+                      href="#">Learn More</a>
+                  </td>
+                </tr>
+              </table>
+              <!-- End of Notify colunm -->
+              <!-- Start of Share colunm -->
+              <table class="share" width="33.33%" align="left" border="0" cellpadding="0" cellspacing="0" style=" padding: 15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="title-icon" width="33.33%" align="left" border="0" cellpadding="0" cellspacing="0"
+                      style=" padding: 0;">
+                      <tr>
+                        <td>
+                          <img src="http://andresgarcia809.com/html-email/img/share_icon.png" alt="share icon">
+                        </td>
+                        <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding: 0 0 0 15px; font-weight: 600;text-transform: uppercase; font-size: 14px;">
+                          <h4>Share</h4>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300; line-height: 1.8; font-size: 14px;">Lorem
+                      ipsum dolor sit amet consectetur.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: lightblue; font-weight: 600; font-size: 14px; text-decoration: none;"
+                      href="#">Learn More</a>
+                  </td>
+                </tr>
+              </table>
+              <!-- End of Share colunm -->
+              <!-- Start of Connect colunm -->
+              <table class="connect" width="33.33%" align="left" border="0" cellpadding="0" cellspacing="0" style=" padding: 15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="title-icon" width="33.33%" align="left" border="0" cellpadding="0" cellspacing="0"
+                      style=" padding: 0;">
+                      <tr>
+                        <td>
+                          <img src="https://andresgarcia809.com/html-email/img/wifi_icon.png" alt="wify icon">
+                        </td>
+                        <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding: 0 0 0 15px; font-weight: 600;text-transform: uppercase; font-size: 14px;">
+                          <h4>Connect</h4>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300; line-height: 1.8; font-size: 14px;">Lorem
+                      ipsum dolor sit amet consectetur.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: lightblue; font-weight: 600; font-size: 14px; text-decoration: none;"
+                      href="#">Learn More</a>
+                  </td>
+                </tr>
+              </table>
+              <!-- End of Connect colunm -->
+            </td>
+          </tr>
+          <!-- Hero-info End-->
+          <!-- advance-App-detail Start-->
+          <tr>
+            <td>
+              <table class="app" width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style=" padding: 15px 0 70px 0; background: white;">
+                <tr>
+                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; text-transform: uppercase; color: #333333; padding: 36px 0 24px 0; font-size: 24px; font-weight: 300;"
+                    align="center">
+                    <img src="http://andresgarcia809.com/html-email/img/image_head.jpg" alt="picture of pink square">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #919191; margin: 0; padding: 25px 0 24px 0; font-size: 24px; font-weight: 100;"
+                      align="center">World's
+                      <span style=" font-weight: 600; text-transform: capitalize; color: #333333;">
+                        most advanced app
+                      </span> <br> with High-Tec solutions
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <!-- Start of Appstore -->
+                    <table class="app-store" width="50%" align="left" border="0" cellpadding="0" cellspacing="0" style=" padding: 15px 15px 60px 26px; background: white;">
+                      <tr>
+                        <td>
+                          <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',    'sans-serif'; color: #7f8887; font-weight:  300; line-height: 1.8; font-size: 14px;  padding: 0 0 30px;">
+                            The strong museum has collected more than 55,000 video games and related artifacts from the
+                            history of gaming.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="http://andresgarcia809.com/html-email/img/appstore.png" alt="apple store icon">
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- End of Appstore -->
+                    <!-- Start of Google-Play -->
+                    <table class="play-store" width="50%" align="left" border="0" cellpadding="0" cellspacing="0" style=" padding: 15px 15px 0px 15px; background: white;">
+                      <tr>
+                        <td>
+                          <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',    'sans-serif'; color: #7f8887; font-weight:  300; line-height: 1.8; font-size: 14px;  padding: 0 0 30px;">
+                            The strong museum has collected more than 55,000 video games and related artifacts from the
+                            history of gaming.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="http://andresgarcia809.com/html-email/img/playstore.png" alt="playstore icon ">
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- End of Google-Play -->
+                    <!-- Start of  One solution-->
+                <tr>
+                  <td>
+                    <table class="one-solution" width="50%" align=" left" border="0" cellpadding="0" cellspacing="0"
+                      style=" padding: 0 15px 0px 15px; background: #141414;">
+                      <tr>
+                        <td>
+                          <img src="http://andresgarcia809.com/html-email/img/one_app.jpg" alt="picture of full circles and half circles with text and icon  inside ">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- End of  One solution-->
+                <!-- Start of Features-->
+                <tr>
+                  <td>
+                    <table class="Features " width="100%" align=" left" border="0" cellpadding="0" cellspacing="0"
+                      style=" padding: 0 15px 0px 15px;">
+                      <tr>
+                        <td>
+                          <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; text-transform: capitalize; color: #919191; padding: 36px 0 24px 0; font-size: 24px; font-weight: 100;"
+                            align="center">Features <span style=" font-weight: 600; text-transform: capitalize; color: #333333">All
+                              Joined Together</span> in One App</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <!--Start of  Sync column-->
+                          <table class=sync width="33.33%" align=" left" border="0" cellpadding="0" cellspacing="0"
+                            style=" padding:  25px 10px; background: white;">
+                            <tr>
+                              <td align=" center">
+                                <img src="http://andresgarcia809.com/html-email/img/watch_screen.png" alt="pink iwatch icon">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <h5 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding:  15px 0 5px; font-weight: 600;text-transform: uppercase; font-size: 14px; margin: 0;">Sync</h5>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300; line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                  align="center">Computer manufacturer Lenovo is getting flak.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <a style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; font-weight: 600; font-size: 14px; text-decoration: none; color: lightblue;"
+                                  href="#">Learn More</a>
+                              </td>
+                            </tr>
+                            <!--End of  Sync column-->
+                            <!--Start of  Share column-->
+                            <table class=share width="33.33%" align=" left" border="0" cellpadding="0" cellspacing="0"
+                              style=" padding:  25px 10px; background: white;">
+                              <tr>
+                                <td align=" center">
+                                  <img src="http://andresgarcia809.com/html-email/img/watch_screen.png" alt="pink iwatch icon">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center">
+                                  <h5 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding:  15px 0 5px; font-weight: 600;text-transform: uppercase; font-size: 14px; margin: 0;">Share</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300; line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                    align="center">Computer manufacturer Lenovo is getting flak.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center">
+                                  <a style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; font-weight: 600; font-size: 14px; text-decoration: none; color: lightblue;"
+                                    href="#">Learn More</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--End of  Share column-->
+                            <!--Start of  Stats column-->
+                            <table class=stats width="33.33%" align=" left" border="0" cellpadding="0" cellspacing="0"
+                              style=" padding:  25px 10px; background: white;">
+                              <tr>
+                                <td align=" center">
+                                  <img src="http://andresgarcia809.com/html-email/img/watch_screen.png" alt="pink iwatch icon">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center">
+                                  <h5 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding:  15px 0 5px; font-weight: 600;text-transform: uppercase; font-size: 14px; margin: 0;">Stats</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300; line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                    align="center">Computer manufacturer Lenovo is getting flak.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center">
+                                  <a style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; font-weight: 600; font-size: 14px; text-decoration: none; color: lightblue;"
+                                    href="#">Learn More</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--End of  Stats column-->
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- End of Features-->
+                <!-- Start of Details-->
+                <tr>
+                  <td>
+                    <table class=details align=" left" width=" 100%" border="0" cellpadding="0" cellspacing="0" style=" padding:  30px 0px;  background: #fafafa;">
+                      <tr>
+                        <td>
+                          <table class=details-wrap align=" left" width=" 100%" border="0" cellpadding="0" cellspacing="0"
+                            style="   padding:  25px 15px;">
+                            <!-- Start of Details Row 1-->
+                            <tr>
+                              <td>
+                                <!-- Start of Responsive Section-->
+                                <table class="Responsive table " align=" left" width=" 50%" border="0" cellpadding="0"
+                                  cellspacing="0" style="   padding: 0 0 25px 0;">
+                                  <tr>
+                                    <td>
+                                      <table class=icon-table width=" 100%" align=" left" border="0" cellpadding="0"
+                                        cellspacing="0" style="   padding: 0;" background: white;">
+                                        <tr>
+                                          <td>
+                                            <img src="http://andresgarcia809.com/html-email/img/phone_icon.png" alt="smart phone icon">
+                                          </td>
+                                          <td>
+                                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; padding: 0 0 0 15px; font-weight: 600;text-transform: uppercase; font-size: 14px;">
+                                              Responsive Layout
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial','Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300;     line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                        align="center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- End of Responsive section-->
+                                <!-- Start of Retina section-->
+                                <table class="retina table" align=" left" width=" 50%" border="0" cellpadding="0"
+                                  cellspacing="0" style="   padding: 0;">
+                                  <tr>
+                                    <td>
+                                      <table class=icon-wrap width=" 100%" align=" left" border="0" cellpadding="0"
+                                        cellspacing="0" style="   padding: 0;">
+                                        <tr>
+                                          <td>
+                                            <img src="http://andresgarcia809.com/html-email/img/retina_icon.png" alt="icon of a eye retina">
+                                          </td>
+                                          <td>
+                                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; margin: 0 0 0 0px;             font-weight: 600;text-transform: uppercase; font-size: 14px; padding: 0;">
+                                              Retina ready
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial','Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300;     line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                        align="center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- End of Retina section-->
+                              </td>
+                            </tr>
+                            <!-- End of Details Row 1-->
+                            <!-- Start of Details Row 2-->
+                            <tr>
+                              <td>
+                                <!-- Start of Various Skin  section-->
+                                <table class="various-skin table" align=" left" width=" 50%" border="0" cellpadding="0"
+                                  cellspacing="0" style=" padding: 0 0 25px 0;">
+                                  <tr>
+                                    <td>
+                                      <table class=icon-wrap width=" 100%" align=" left" border="0" cellpadding="0"
+                                        cellspacing="0" style="   padding: 0;">
+                                        <tr>
+                                          <td>
+                                            <img src="http://andresgarcia809.com/html-email/img/check_icon.png" alt="check mark icon">
+                                          </td>
+                                          <td>
+                                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; margin: 0 0 0 0px;             font-weight: 600;text-transform: uppercase; font-size: 14px; padding: 0">
+                                              Various Skins
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial','Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300;     line-height:  1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                        align="center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- End of Various Skin section-->
+                                <!-- Start of Great Performance section-->
+                                <table class="great-performance table" align=" left" width=" 50%" border="0"
+                                  cellpadding="0" cellspacing="0" style="   padding: 0; ">
+                                  <tr>
+                                    <td>
+                                      <table class=icon-wrap width=" 100%" align=" left" border="0" cellpadding="0"
+                                        cellspacing="0" style="   padding: 0;">
+                                        <tr>
+                                          <td>
+                                            <img src="http://andresgarcia809.com/html-email/img/settings_icon.png" alt="settings icon">
+                                          </td>
+                                          <td>
+                                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; margin: 0 0 0 0px;             font-weight: 600;text-transform: uppercase; font-size: 14px; padding: 0;">
+                                              Great Performance
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial','Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300;     line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                        align="center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- End of Great Performance section-->
+                              </td>
+                            </tr>
+                            <!-- End of Details Row 2-->
+                            <!-- Start of Details Row 3-->
+                            <tr>
+                              <td>
+                                <!-- Start of User Friendly Menus  section-->
+                                <table class="user-friendly-menu table" align=" left" width=" 50%" border="0"
+                                  cellpadding="0" cellspacing="0" style="   padding: 0; ">
+                                  <tr>
+                                    <td>
+                                      <table class=icon-wrap width=" 100%" align=" left" border="0" cellpadding="0"
+                                        cellspacing="0" style="   padding: 0;">
+                                        <tr>
+                                          <td>
+                                            <img src="http://andresgarcia809.com/html-email/img/menu_icon.png" alt="icon of hamburger menu">
+                                          </td>
+                                          <td>
+                                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; margin: 0 0 0 0px;             font-weight: 600;text-transform: uppercase; font-size: 14px; padding: 0">
+                                              User-friendly Menu
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial','Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300;     line-height:  1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                        align="center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- End of User friendly Menus section-->
+                                <!-- Start of Social Share section-->
+                                <table class="social-share table" align=" left" width=" 50%" border="0" cellpadding="0"
+                                  cellspacing="0" style="   padding: 0; ">
+                                  <tr>
+                                    <td>
+                                      <table class=icon-wrap width=" 100%" align=" left" border="0" cellpadding="0"
+                                        cellspacing="0" style="   padding: 0;">
+                                        <tr>
+                                          <td>
+                                            <img src="http://andresgarcia809.com/html-email/img/share_icon.png" alt="share icon">
+                                          </td>
+                                          <td>
+                                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'; color: #333333; margin: 0 0 0 0px;             font-weight: 600;text-transform: uppercase; font-size: 14px; padding: 0;">
+                                              Social Share
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial','Lucida Grande', 'sans-serif'; color: #7f8887; font-weight: 300;     line-height: 1.8; font-size: 14px; margin: 0; padding: 0 0 15px 0;"
+                                        align="center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- End of Social Share section-->
+                              </td>
+                            </tr>
+                            <!-- End of Details Row 3-->
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- End of Details-->
+            </td>
+          </tr>
+          <!--Start  of Interested -->
+          <tr>
+            <td>
+              <table class="interested-wrap" width="100%" border="0" cellpadding="0" cellspacing="0" style="background: #00f9f5; background: -moz-linear-gradient(left, #00f9f5 15%, #208fe5 100%, #208fe5 100%, #2989d8 100%, #208fe5 101%, #208fe5 103%); background: -webkit-linear-gradient(left, #00f9f5 15%,#208fe5 100%,#208fe5 100%,#2989d8 100%,#208fe5 101%,#208fe5 103%); background: linear-gradient(to right, #00f9f5 15%,#208fe5 100%,#208fe5 100%,#2989d8 100%,#208fe5 101%,#208fe5 103%); padding:  0px">
+                <tr>
+                  <td align="center" style=" padding: 75px">
+                    <h1 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; text-transform: uppercase; color: white; padding: 0 0 20px 0; margin: 0; font-size: 24px; font-weight: 300;">
+                      Interested In Our App?
+                    </h1>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',    'sans-serif'; color: white; font-weight:  300; line-height: 1.8; font-size: 14px;  padding: 0 0 30px 0;">Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Error adipisci, aperiam expedita porro
+                      suscipit dignissimos!ipsum dolor sit amet consectetur.</p>
+                    <a href="#" class="ghost-btn" style="font-size: 12px; border: 1px solid white; border-radius: 3px; padding: 8px 10px; text-decoration: none; color: white; text-transform: uppercase;">Request
+                      a Quote</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of Interested -->
+          <!--Start of Social Media -->
+          <tr align=" center">
+            <td>
+              <table class="social-media-wrap" width="100%" border="0" cellpadding="0" cellspacing="0" style=" background: white;">
+                <tr>
+                  <td>
+                    <h1 style="margin: 50px 0 30px 0">Hero</h1>
+                  </td>
+                </tr>
+            </td>
+          <tr>
+            <td>
+              <!--Social media icons-->
+              <table calss="Social-media-icons-container" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style=" padding: 0 5px">
+                    <img style=" padding: 0 5px" src="http://andresgarcia809.com/html-email/img/linkedin_icon.png" alt="linkedin.com icon">
+                    <img style=" padding: 0 5px" src="http://andresgarcia809.com/html-email/img/facebook_icon.png" alt="facebook.com icon">
+                    <img style=" padding: 0 5px" src="http://andresgarcia809.com/html-email/img/google_icon.png" alt="goolge.com icon">
+                    <img style=" padding: 0 5px" src="http://andresgarcia809.com/html-email/img/pinterest_icon.png" alt="pinterest.com icon">
+                    <img style=" padding: 0 5px" src="http://andresgarcia809.com/html-email/img/twitter_icon.png" alt="twitter.com icon">
+                    <img style=" padding: 0 5px" src="http://andresgarcia809.com/html-email/img/youtube_icon.png" alt="youtube.com icon">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          <tr>
+            <td>
+              <p style="padding: 20px 0; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',    'sans-serif'; color: #b4b4b4; font-weight:  300; line-height: 1.8; font-size: 12px;  padding: 0 0 30px 0;">&copy
+                20XX All Rights Reserved - Yourcompany. Is your inbox overflowing?<a style="color: #2792ec" href="">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  <!--Start of Social Media -->
+  </table>
+  </td>
+  </tr>
+  </td>
+  </tr>
+  </table>
+  <!--End of container-->
+  </td>
+  </tr>
+  </table>
+  <!--End of Email-->
+</body>
+
+</html>
